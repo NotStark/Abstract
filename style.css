@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #DADBF1;
+  width: 100%;
+  height: 70%;
+}
+header .navbar {
+  height: 12vh;
+  background-color: #000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 6.5rem;
+}
+header .navbar #nav-part1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .navbar #nav-part1 > a:nth-child(1) {
+  transition: 0.3s ease-in-out;
+}
+header .navbar #nav-part1 > a:nth-child(1) svg {
+  height: 2rem;
+}
+header .navbar #nav-part1 > a:nth-child(1):hover {
+  opacity: 0.8;
+}
+header .navbar #nav-part1 > a:nth-child(2) {
+  color: #fff;
+  font-size: 1.35rem;
+  border-left: 2px solid #fff;
+  padding-left: 10px;
+}
+header .navbar #nav-part1 > a:nth-child(2):hover {
+  text-decoration: underline;
+}
+header .navbar #nav-part2 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header .navbar #nav-part2 i,
+header .navbar #nav-part2 .menu {
+  display: none;
+}
+header .navbar #nav-part2 a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.2vw;
+  letter-spacing: 1px;
+}
+header .navbar #nav-part2 a:nth-of-type(1) {
+  background-color: #191A1B;
+  padding: 0.7vw 1.2vw;
+  border-radius: 7px;
+  border: 1px solid #fff;
+}
+header .navbar #nav-part2 a:nth-of-type(2) {
+  padding: 0.8vw 2vw;
+  border-radius: 8px;
+  transition: 0.3s ease-in;
+  background-color: #4C5FD5;
+}
+header .navbar #nav-part2 a:nth-of-type(2):hover {
+  background-color: #fff;
+  color: #000;
+}
+@media screen and (max-width: 1200px) {
+  header .navbar #nav-part2 a {
+    display: none;
+  }
+  header .navbar #nav-part2 i,
+  header .navbar #nav-part2 .menu {
+    color: #fff;
+    display: block;
+  }
+  header .navbar #nav-part2 i {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  header .navbar #nav-part2 .menu .line {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 4px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .navbar {
+    padding-inline: 1rem;
+  }
+}
+header .input {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .input form {
+  text-align: center;
+  margin-bottom: 10%;
+}
+header .input form label {
+  font-size: 4rem;
+  font-weight: 500;
+}
+header .input form .input-bar {
+  position: relative;
+  left: -10%;
+  top: 1rem;
+}
+header .input form .input-bar i {
+  position: absolute;
+  top: 27%;
+  right: -15%;
+  font-size: 2rem;
+}
+header .input form .input-bar input {
+  width: 120%;
+  height: 65px;
+  border: 1px solid #000;
+  border-radius: 6px;
+}
+header .input form .input-bar input::-moz-placeholder {
+  padding: 15px;
+  font-size: 18px;
+}
+header .input form .input-bar input::placeholder {
+  padding: 15px;
+  font-size: 18px;
+}
+
+#idk-the-name {
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 8.5rem;
+}
+#idk-the-name .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 100px;
+}
+#idk-the-name .grid .grid-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #191A1B;
+}
+#idk-the-name .grid .grid-items img {
+  max-width: 15%;
+}
+#idk-the-name .grid .grid-items .texts h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#idk-the-name .grid .grid-items .texts h3 {
+  width: 80%;
+  font-weight: 400;
+  margin-block: 0.85rem;
+}
+#idk-the-name .grid .grid-items .texts a {
+  font-size: 1.3rem;
+  color: #526CD6;
+}
+#idk-the-name .grid .grid-items .texts a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
